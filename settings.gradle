@@ -1,0 +1,7 @@
+rootProject.name = 'ENote'
+
+include 'back-end'
+include 'back-end:common-api'
+include 'back-end:configuration-service'
+include 'back-end:discovery-service'
+include 'back-end:gateway-service'

@@ -1,0 +1,18 @@
+spring:
+  jackson:
+    serialization:
+      indent_output: true
+  cloud:
+    discovery:
+      client:
+        composite-indicator:
+          enabled:  false
+
+eureka:
+  instance:
+    hostname: ${HOST_NAME:localhost}
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://${EUREKA_CREDENTIALS:user:password}@${EUREKA_URL:localhost:1111}/eureka/
