@@ -1,1 +1,5 @@
 version '0.1'
+
+dependencies {
+    compileOnly("io.springfox:springfox-swagger2:${springfoxSwaggerVersion}")
+}

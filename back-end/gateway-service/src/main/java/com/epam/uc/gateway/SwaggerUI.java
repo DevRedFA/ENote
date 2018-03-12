@@ -15,7 +15,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 public class SwaggerUI implements SwaggerResourcesProvider {
 
-  private static final String SWAGGER_JSON_ENDPOINT = "/v2/api-docs";
+  private static final String SWAGGER_JSON_ENDPOINT = "/api";
 
   @Override
   public List<SwaggerResource> get() {
