@@ -1,4 +1,4 @@
-package com.epam.uc.gateway.controller;
+package com.enote.notebook.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
@@ -9,11 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class HelloWorldController {
 
-  @Value("#{property.to.check}")
-  private String property;
+    @Value("${spring.application.name}")
+    private String name;
 
-  @GetMapping("/helloWorld")
-  public String sayHello() {
-    return "Works fine with profile dev:" + property;
-  }
+    @GetMapping("/notebook")
+    public String sayHello() {
+        return "Works fine: " + name;
+    }
 }

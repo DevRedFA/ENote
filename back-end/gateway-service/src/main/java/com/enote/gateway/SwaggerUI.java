@@ -1,4 +1,4 @@
-package com.epam.uc.gateway;
+package com.enote.gateway;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,13 +15,13 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 public class SwaggerUI implements SwaggerResourcesProvider {
 
-  private static final String SWAGGER_JSON_ENDPOINT = "/api";
+//  private static final String SWAGGER_JSON_ENDPOINT = "/api";
 
   @Override
   public List<SwaggerResource> get() {
     List<SwaggerResource> resources = new ArrayList<>();
 
-    resources.add(swaggerResource("attachment", "/attachment" + SWAGGER_JSON_ENDPOINT, "0.1"));
+//    resources.add(swaggerResource("attachment", "/attachment" + SWAGGER_JSON_ENDPOINT, "0.1"));
 
     return resources;
   }

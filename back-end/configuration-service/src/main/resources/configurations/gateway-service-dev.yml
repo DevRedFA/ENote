@@ -1,3 +1,7 @@
 swagger:
   api:
     auto: true
+
+property:
+  to:
+    check: Dev profile

@@ -1,4 +1,6 @@
 server:
   port: 8080
 
-property.to.check: From_configuration
+property:
+  to:
+    check: Default profile
